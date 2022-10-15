@@ -7,10 +7,7 @@ Resources:
   writeUser:
     Type: AWS::Serverless::Function 
     Properties:
+      Timeout: 10
       CodeUri: ./ # format is projectPath/
       Handler: writeUserLambda.handler # format is filename.functionName
       Runtime: nodejs16.x
-
-
-
-
